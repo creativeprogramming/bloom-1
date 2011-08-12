@@ -1,0 +1,15 @@
+
+" Vim workspace file. This file is auto-generated.
+let ws_entry_count = 1
+let ws_entry_0_name = 'src'
+let ws_entry_0_type = 'group'
+let ws_entry_0_count = 4
+let ws_entry_0_0_name = '/home/dave/development/github/bloom/hashes.h'
+let ws_entry_0_0_type = 'file'
+let ws_entry_0_1_name = '/home/dave/development/github/bloom/bloom.h'
+let ws_entry_0_1_type = 'file'
+let ws_entry_0_2_name = '/home/dave/development/github/bloom/bloom.c'
+let ws_entry_0_2_type = 'file'
+let ws_entry_0_3_name = '/home/dave/development/github/bloom/spellcheck.c'
+let ws_entry_0_3_type = 'file'
+
