@@ -34,13 +34,13 @@ int main(int argc, char *argv[])
     // Open the dictionary file
     FILE *fp; 
     if (!(fp = fopen("dictionary", "r"))) {
-        fprintf(stderr, "E: Couldn't open words file\n");
+        fprintf(stderr, "E: Couldn't open dictionary file\n");
         fflush (stderr);
         return 1;
     }
 
     // Create a bloom filter
-    bloom_t *filter = bloom_filter_new(2500000);
+    bloom_t *filter = bloom_filter_new(500000);
 
     // Add all dictionary words to the filter
     char *p;
@@ -69,3 +69,4 @@ int main(int argc, char *argv[])
     bloom_filter_free(filter);
     return 0;
 }
+

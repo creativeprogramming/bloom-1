@@ -53,5 +53,10 @@ size_t bloom_filter_count(bloom_t*);
  */
 size_t bloom_filter_size(bloom_t*);
 
+/**
+ * Remove a key from a bloom filter
+ */
+int bloom_filter_remove(bloom_t*, const char*);
+
 
 #endif // __BLOOM_H_INCLUDED__

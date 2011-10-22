@@ -4,12 +4,11 @@ let ws_entry_count = 1
 let ws_entry_0_name = 'src'
 let ws_entry_0_type = 'group'
 let ws_entry_0_count = 4
-let ws_entry_0_0_name = 'hashes.h'
+let ws_entry_0_0_name = 'bloom.h'
 let ws_entry_0_0_type = 'file'
-let ws_entry_0_1_name = 'bloom.h'
+let ws_entry_0_1_name = 'bloom.c'
 let ws_entry_0_1_type = 'file'
-let ws_entry_0_2_name = 'bloom.c'
+let ws_entry_0_2_name = 'spellcheck.c'
 let ws_entry_0_2_type = 'file'
-let ws_entry_0_3_name = 'spellcheck.c'
+let ws_entry_0_3_name = 'test.c'
 let ws_entry_0_3_type = 'file'
-

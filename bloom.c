@@ -14,6 +14,7 @@
 #include "hashes.h"
 
 #define SETBIT(bitset, i) (bitset[i / CHAR_BIT] |= (1 << (i % CHAR_BIT)))
+#define CLRBIT(bitset, i) (bitset[i / CHAR_BIT] &= (~(1<<(i % CHAR_BIT))))
 #define GETBIT(bitset, i) (bitset[i / CHAR_BIT]  & (1 << (i % CHAR_BIT)))
 
 /**
@@ -132,3 +133,19 @@ size_t bloom_filter_size(bloom_t *filter)
 {
     return filter->size;
 }
+
+/**
+ * Remove a key from a bloom filter
+ */
+int bloom_filter_remove(bloom_t *filter, const char *key)
+{
+    if (!filter || !key) {
+        return 0;
+    }
+    int i; for (i = 0; i < filter->num_functions; ++i) {
+        CLRBIT(filter->bitset, filter->functions[i](key) % filter->size);
+    }
+    --(filter->count);
+    return 1;
+}
+
