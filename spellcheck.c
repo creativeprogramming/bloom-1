@@ -15,7 +15,7 @@
 /**
  * Strip '\r' or '\n' chars from a string
  */
-static int strip(char *string)
+static void strip(char *string)
 {
     char *c;
     if ((c = strchr(string, '\r'))) {
@@ -50,8 +50,8 @@ int main(int argc, char *argv[])
         bloom_filter_add(filter, line);
     }
     fclose(fp);
-    printf("bloom filter count : %u\n", bloom_filter_count(filter));
-    printf("bloom filter size  : %u\n", bloom_filter_size(filter));
+    printf("bloom filter count : %u\n", (unsigned)bloom_filter_count(filter));
+    printf("bloom filter size  : %u\n", (unsigned)bloom_filter_size(filter));
 
     // Read words from stdin and print those words not in the bloom filter
     while (fgets(line, 1024, stdin)) {

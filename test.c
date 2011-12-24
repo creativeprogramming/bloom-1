@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
     }
     bloom_t *filter = bloom_filter_new(500000);
     assert(filter);
-    char *p;
+    //char *p;
     char line[1024];
     while (fgets(line, 1024, fp)) {
         strip(line);
