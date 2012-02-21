@@ -68,7 +68,6 @@ bloom_t *bloom_filter_new(size_t size)
         size, 4, jenkins_hash, murmur_hash, sax_hash, sdbm_hash);
 }
 
-
 /**
  * Free and allocated bloom filter
  */

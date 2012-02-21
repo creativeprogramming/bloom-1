@@ -1,7 +1,7 @@
 here is a sentence
 here is another sentenze
 my name is xenexxq
-what is your name buddy
-exit
-end
-quit
+what is your name buddy?
+please tell me you can sepll warzds cirrectly
+apparently not
+damn it!
